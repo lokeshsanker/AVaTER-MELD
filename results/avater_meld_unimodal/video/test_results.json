@@ -1,0 +1,68 @@
+{
+  "modality": "video",
+  "feature_dimension": 7,
+  "best_epoch": 1,
+  "best_dev_macro_f1": 0.1304735655730182,
+  "test_accuracy": 0.44061302681992337,
+  "test_macro_f1": 0.13691025722645875,
+  "test_weighted_f1": 0.3451053226710046,
+  "test_loss": 1.893534124308619,
+  "test_samples": 2610,
+  "classification_report": {
+    "neutral": {
+      "precision": 0.4852459016393443,
+      "recall": 0.8248407643312102,
+      "f1-score": 0.6110291949277499,
+      "support": 1256.0
+    },
+    "joy": {
+      "precision": 0.25892857142857145,
+      "recall": 0.21641791044776118,
+      "f1-score": 0.23577235772357724,
+      "support": 402.0
+    },
+    "sadness": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 208.0
+    },
+    "anger": {
+      "precision": 0.19424460431654678,
+      "recall": 0.0782608695652174,
+      "f1-score": 0.1115702479338843,
+      "support": 345.0
+    },
+    "fear": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 50.0
+    },
+    "disgust": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 68.0
+    },
+    "surprise": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 281.0
+    },
+    "accuracy": 0.44061302681992337,
+    "macro avg": {
+      "precision": 0.13405986819778035,
+      "recall": 0.15993136347774126,
+      "f1-score": 0.13691025722645875,
+      "support": 2610.0
+    },
+    "weighted avg": {
+      "precision": 0.2990699335871688,
+      "recall": 0.44061302681992337,
+      "f1-score": 0.3451053226710046,
+      "support": 2610.0
+    }
+  }
+}

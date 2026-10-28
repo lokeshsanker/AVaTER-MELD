@@ -1,0 +1,70 @@
+{
+  "experiment": "MobileNetV2 frame features + MLP",
+  "feature_source": "four frame embeddings averaged per utterance",
+  "feature_dimension": 1280,
+  "frames_per_utterance": 4,
+  "best_epoch": 4,
+  "best_dev_macro_f1": 0.16791239329486318,
+  "test_accuracy": 0.35747126436781607,
+  "test_macro_f1": 0.16374358441611236,
+  "test_weighted_f1": 0.33467024528097256,
+  "test_loss": 2.007711292866089,
+  "test_samples": 2610,
+  "classification_report": {
+    "neutral": {
+      "precision": 0.5036887994634474,
+      "recall": 0.5979299363057324,
+      "f1-score": 0.5467783036039315,
+      "support": 1256.0
+    },
+    "joy": {
+      "precision": 0.21577726218097448,
+      "recall": 0.23134328358208955,
+      "f1-score": 0.22328931572629052,
+      "support": 402.0
+    },
+    "sadness": {
+      "precision": 0.14661654135338345,
+      "recall": 0.1875,
+      "f1-score": 0.16455696202531644,
+      "support": 208.0
+    },
+    "anger": {
+      "precision": 0.14754098360655737,
+      "recall": 0.10434782608695652,
+      "f1-score": 0.12224108658743633,
+      "support": 345.0
+    },
+    "fear": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 50.0
+    },
+    "disgust": {
+      "precision": 0.038461538461538464,
+      "recall": 0.014705882352941176,
+      "f1-score": 0.02127659574468085,
+      "support": 68.0
+    },
+    "surprise": {
+      "precision": 0.12871287128712872,
+      "recall": 0.046263345195729534,
+      "f1-score": 0.06806282722513089,
+      "support": 281.0
+    },
+    "accuracy": 0.35747126436781607,
+    "macro avg": {
+      "precision": 0.16868542805043285,
+      "recall": 0.16887003907477843,
+      "f1-score": 0.16374358441611236,
+      "support": 2610.0
+    },
+    "weighted avg": {
+      "precision": 0.32166941491022055,
+      "recall": 0.35747126436781607,
+      "f1-score": 0.33467024528097256,
+      "support": 2610.0
+    }
+  }
+}

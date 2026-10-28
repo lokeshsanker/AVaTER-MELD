@@ -1,0 +1,68 @@
+{
+  "modality": "audio",
+  "feature_dimension": 1024,
+  "best_epoch": 8,
+  "best_dev_macro_f1": 0.23453380276327038,
+  "test_accuracy": 0.3727969348659004,
+  "test_macro_f1": 0.2059038145459095,
+  "test_weighted_f1": 0.372350427463625,
+  "test_loss": 1.9246307564877916,
+  "test_samples": 2610,
+  "classification_report": {
+    "neutral": {
+      "precision": 0.5551181102362205,
+      "recall": 0.5613057324840764,
+      "f1-score": 0.5581947743467933,
+      "support": 1256.0
+    },
+    "joy": {
+      "precision": 0.2013129102844639,
+      "recall": 0.22885572139303484,
+      "f1-score": 0.21420256111757857,
+      "support": 402.0
+    },
+    "sadness": {
+      "precision": 0.19852941176470587,
+      "recall": 0.12980769230769232,
+      "f1-score": 0.1569767441860465,
+      "support": 208.0
+    },
+    "anger": {
+      "precision": 0.2789115646258503,
+      "recall": 0.23768115942028986,
+      "f1-score": 0.2566510172143975,
+      "support": 345.0
+    },
+    "fear": {
+      "precision": 0.03571428571428571,
+      "recall": 0.02,
+      "f1-score": 0.02564102564102564,
+      "support": 50.0
+    },
+    "disgust": {
+      "precision": 0.009009009009009009,
+      "recall": 0.014705882352941176,
+      "f1-score": 0.0111731843575419,
+      "support": 68.0
+    },
+    "surprise": {
+      "precision": 0.2070063694267516,
+      "recall": 0.2313167259786477,
+      "f1-score": 0.2184873949579832,
+      "support": 281.0
+    },
+    "accuracy": 0.3727969348659004,
+    "macro avg": {
+      "precision": 0.21222880872304098,
+      "recall": 0.2033818448480975,
+      "f1-score": 0.2059038145459095,
+      "support": 2610.0
+    },
+    "weighted avg": {
+      "precision": 0.37403902702730596,
+      "recall": 0.3727969348659004,
+      "f1-score": 0.372350427463625,
+      "support": 2610.0
+    }
+  }
+}

@@ -1,0 +1,34 @@
+﻿# Datasets and generated features
+data/
+cache/
+video_frames_4/
+
+# Trained model checkpoints
+checkpoints/
+
+# Generated media and temporary files
+*.npy
+*.npz
+*.pt
+*.pth
+*.bin
+*.mp4
+*.wav
+
+# Python environments
+.venv/
+.venv_avater_gpu/
+.venv_avater_tf/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+.ipynb_checkpoints/
+*.log
+.DS_Store
+Thumbs.db

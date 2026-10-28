@@ -1,0 +1,8 @@
+experiment,modalities,fusion_type,loss_type,accuracy,macro_f1,weighted_f1,ece
+ablation_concat_weighted_ce_text,text,concat,weighted_ce,0.6065134099616858,0.43304765404972007,0.6047485940444809,0.04817881365502934
+ablation_concat_weighted_ce_audio,audio,concat,weighted_ce,0.3988505747126437,0.2126703440323902,0.379134631985772,0.13733253139303103
+ablation_concat_weighted_ce_video,video,concat,weighted_ce,0.28084291187739463,0.15666372299022058,0.29400636370932975,0.15115825648622952
+ablation_concat_weighted_ce_text_audio,text+audio,concat,weighted_ce,0.6015325670498084,0.4145888436510378,0.5958485518145954,0.07092308018399382
+ablation_concat_weighted_ce_text_video,text+video,concat,weighted_ce,0.6065134099616858,0.42624231231131027,0.6050417347696709,0.035086050743800924
+ablation_concat_weighted_ce_audio_video,audio+video,concat,weighted_ce,0.3333333333333333,0.18735685813544684,0.3388310944568835,0.09827479068118493
+ablation_concat_weighted_ce_text_audio_video,text+audio+video,concat,weighted_ce,0.6022988505747127,0.4254232763399194,0.6029496166723722,0.031552734651328046

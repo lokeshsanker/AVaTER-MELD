@@ -1,0 +1,97 @@
+================================================================================
+VIDEO V3 - TEST SET EVALUATION
+================================================================================
+
+MODEL
+--------------------------------------------------------------------------------
+Video V3
+MobileNetV2 cached features + BiGRU + Attention Pooling
+Input shape: [N, 4, 1280]
+Checkpoint: C:\MELD\project\emotion_pipeline\emotion_pipeline\checkpoints\video_v3\video_v3_best.pt
+
+TEST DATA
+--------------------------------------------------------------------------------
+Samples: 2610
+Frames per sample: 4
+Feature dimension: 1280
+
+OVERALL RESULTS
+--------------------------------------------------------------------------------
+Test Loss:       1.7472
+Accuracy:        0.3153 (31.53%)
+Macro-F1:        0.1558 (15.58%)
+Weighted-F1:     0.3091 (30.91%)
+
+
+CLASSIFICATION REPORT
+--------------------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+     neutral     0.4917    0.4729    0.4821      1256
+         joy     0.1994    0.3109    0.2430       402
+     sadness     0.1203    0.0769    0.0938       208
+       anger     0.1827    0.2261    0.2021       345
+        fear     0.0000    0.0000    0.0000        50
+     disgust     0.0213    0.0294    0.0247        68
+    surprise     0.1081    0.0285    0.0451       281
+
+    accuracy                         0.3153      2610
+   macro avg     0.1605    0.1635    0.1558      2610
+weighted avg     0.3133    0.3153    0.3091      2610
+
+
+CONFUSION MATRIX
+--------------------------------------------------------------------------------
+Rows = Actual
+Columns = Predicted
+
+                 neutral       joy   sadness     anger      fear   disgust  surprise
+neutral            594       294        61       203        29        40        35
+joy                181       125        16        56         3        12         9
+sadness             99        39        16        37         1         8         8
+anger              143        76        19        78         6        14         9
+fear                26        12         5         2         0         2         3
+disgust             29        17         7         6         5         2         2
+surprise           136        64         9        45         3        16         8
+
+
+PREDICTION DISTRIBUTION
+--------------------------------------------------------------------------------
+neutral     :  1208 ( 46.28%)
+joy         :   627 ( 24.02%)
+sadness     :   133 (  5.10%)
+anger       :   427 ( 16.36%)
+fear        :    47 (  1.80%)
+disgust     :    94 (  3.60%)
+surprise    :    74 (  2.84%)
+
+
+ACTUAL TEST DISTRIBUTION
+--------------------------------------------------------------------------------
+neutral     :  1256 ( 48.12%)
+joy         :   402 ( 15.40%)
+sadness     :   208 (  7.97%)
+anger       :   345 ( 13.22%)
+fear        :    50 (  1.92%)
+disgust     :    68 (  2.61%)
+surprise    :   281 ( 10.77%)
+
+
+CLASS DETECTION
+--------------------------------------------------------------------------------
+neutral     : DETECTED       predictions=1208
+joy         : DETECTED       predictions=627
+sadness     : DETECTED       predictions=133
+anger       : DETECTED       predictions=427
+fear        : DETECTED       predictions=47
+disgust     : DETECTED       predictions=94
+surprise    : DETECTED       predictions=74
+
+Classes detected: 7/7
+
+
+SANITY CHECK
+--------------------------------------------------------------------------------
+PASS - 2610 predictions generated.
+
+================================================================================

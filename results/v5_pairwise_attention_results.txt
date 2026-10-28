@@ -1,0 +1,67 @@
+================================================================================
+V5 FEATURE-LEVEL PAIRWISE CROSS-MODAL ATTENTION RESULTS
+================================================================================
+
+Run ID: RUN_006
+Version: V5
+
+MODEL
+------
+Text: DistilBERT 768-D
+Audio: Wav2Vec2 768-D
+Video: FER-ViT 768-D after frame mean pooling
+Fusion: Feature-level pairwise cross-modal attention
+Directions: Text->Audio, Audio->Text, Text->Video, Video->Text, Audio->Video, Video->Audio
+
+Best Epoch: 9
+
+V5 DEV RESULTS
+---------------
+Accuracy    : 0.3989
+Macro-F1    : 0.2097
+Weighted-F1 : 0.3614
+
+V5 TEST RESULTS
+----------------
+Accuracy    : 0.4176
+Macro-F1    : 0.1920
+Weighted-F1 : 0.3810
+
+V4 BASELINE
+-----------
+Accuracy    : 0.4782
+Macro-F1    : 0.1910
+Weighted-F1 : 0.4018
+
+V5 - V4 DIFFERENCE
+------------------
+Accuracy difference    : -0.0606
+Macro-F1 difference    : +0.0010
+Weighted-F1 difference : -0.0208
+
+V5 TEST CLASSIFICATION REPORT
+------------------------------
+              precision    recall  f1-score   support
+
+     neutral       0.53      0.69      0.60      1256
+         joy       0.26      0.20      0.23       402
+     sadness       0.15      0.05      0.08       208
+       anger       0.24      0.25      0.25       345
+        fear       0.00      0.00      0.00        50
+     disgust       0.17      0.01      0.03        68
+    surprise       0.19      0.15      0.17       281
+
+    accuracy                           0.42      2610
+   macro avg       0.22      0.19      0.19      2610
+weighted avg       0.36      0.42      0.38      2610
+
+
+V5 TEST CONFUSION MATRIX
+------------------------
+[[870 126  32 141   2   2  83]
+ [231  80  10  37   0   1  43]
+ [132  19  11  31   1   1  13]
+ [181  34  11  86   1   1  31]
+ [ 29   3   1  10   0   0   7]
+ [ 42   8   3   8   0   1   6]
+ [158  35   3  42   1   0  42]]

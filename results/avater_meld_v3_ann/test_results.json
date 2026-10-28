@@ -1,0 +1,144 @@
+{
+  "experiment": "AVaTER-MELD V3",
+  "description": "V2 architecture with stronger regularization and softer inverse-frequency class weights.",
+  "best_epoch": 40,
+  "best_dev_macro_f1": 0.4074432882320398,
+  "test_loss": 1.4573864686534779,
+  "test_accuracy": 0.5911877394636015,
+  "test_macro_f1": 0.3990931683686602,
+  "test_weighted_f1": 0.5826693104499927,
+  "labels": [
+    "neutral",
+    "joy",
+    "sadness",
+    "anger",
+    "fear",
+    "disgust",
+    "surprise"
+  ],
+  "train_samples": 9988,
+  "dev_samples": 1108,
+  "test_samples": 2610,
+  "classification_report": {
+    "neutral": {
+      "precision": 0.7263236390753169,
+      "recall": 0.7754777070063694,
+      "f1-score": 0.7500962649210627,
+      "support": 1256.0
+    },
+    "joy": {
+      "precision": 0.5163727959697733,
+      "recall": 0.5099502487562189,
+      "f1-score": 0.5131414267834794,
+      "support": 402.0
+    },
+    "sadness": {
+      "precision": 0.38461538461538464,
+      "recall": 0.28846153846153844,
+      "f1-score": 0.32967032967032966,
+      "support": 208.0
+    },
+    "anger": {
+      "precision": 0.4444444444444444,
+      "recall": 0.39420289855072466,
+      "f1-score": 0.41781874039938555,
+      "support": 345.0
+    },
+    "fear": {
+      "precision": 0.14583333333333334,
+      "recall": 0.14,
+      "f1-score": 0.14285714285714285,
+      "support": 50.0
+    },
+    "disgust": {
+      "precision": 0.17073170731707318,
+      "recall": 0.10294117647058823,
+      "f1-score": 0.12844036697247707,
+      "support": 68.0
+    },
+    "surprise": {
+      "precision": 0.4797507788161994,
+      "recall": 0.5480427046263345,
+      "f1-score": 0.5116279069767442,
+      "support": 281.0
+    },
+    "accuracy": 0.5911877394636015,
+    "macro avg": {
+      "precision": 0.40972458336736073,
+      "recall": 0.3941537534102535,
+      "f1-score": 0.3990931683686602,
+      "support": 2610.0
+    },
+    "weighted avg": {
+      "precision": 0.577352137779065,
+      "recall": 0.5911877394636015,
+      "f1-score": 0.5826693104499927,
+      "support": 2610.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      974,
+      83,
+      57,
+      48,
+      18,
+      13,
+      63
+    ],
+    [
+      115,
+      205,
+      14,
+      36,
+      2,
+      0,
+      30
+    ],
+    [
+      79,
+      22,
+      60,
+      21,
+      8,
+      4,
+      14
+    ],
+    [
+      88,
+      48,
+      12,
+      136,
+      10,
+      8,
+      43
+    ],
+    [
+      18,
+      2,
+      7,
+      8,
+      7,
+      1,
+      7
+    ],
+    [
+      24,
+      4,
+      2,
+      19,
+      2,
+      7,
+      10
+    ],
+    [
+      43,
+      33,
+      4,
+      38,
+      1,
+      8,
+      154
+    ]
+  ]
+}

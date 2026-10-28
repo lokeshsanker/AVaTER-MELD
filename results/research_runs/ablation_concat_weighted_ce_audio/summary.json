@@ -1,0 +1,39 @@
+{
+  "run_name": "ablation_concat_weighted_ce_audio",
+  "modalities": [
+    "audio"
+  ],
+  "fusion_type": "concat",
+  "loss_type": "weighted_ce",
+  "best_dev_macro_f1": 0.20167405697265198,
+  "checkpoint": "C:\\MELD\\project\\emotion_pipeline\\emotion_pipeline\\checkpoints\\research_runs\\ablation_concat_weighted_ce_audio_best.pt",
+  "class_counts": {
+    "neutral": 4709.0,
+    "joy": 1743.0,
+    "sadness": 683.0,
+    "anger": 1109.0,
+    "fear": 268.0,
+    "disgust": 271.0,
+    "surprise": 1205.0
+  },
+  "test_uncalibrated": {
+    "accuracy": 0.3988505747126437,
+    "macro_f1": 0.2126703440323902,
+    "weighted_f1": 0.379134631985772,
+    "ece": 0.13733253139303103,
+    "mean_confidence": 0.263851135969162,
+    "mean_confidence_correct": 0.2722938358783722,
+    "mean_confidence_incorrect": 0.25824952125549316,
+    "temperature": 1.0
+  },
+  "test_calibrated": {
+    "accuracy": 0.3988505747126437,
+    "macro_f1": 0.2126703440323902,
+    "weighted_f1": 0.379134631985772,
+    "ece": 0.05058603422052559,
+    "mean_confidence": 0.3682800829410553,
+    "mean_confidence_correct": 0.3862150013446808,
+    "mean_confidence_incorrect": 0.3563806116580963,
+    "temperature": 0.5672999620437622
+  }
+}

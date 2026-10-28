@@ -1,0 +1,19 @@
+{
+  "architecture": "AVaTER-inspired pooled-feature cross-modal attention",
+  "best_epoch": 1,
+  "best_dev_macro_f1": 0.4116125285251166,
+  "test_samples": 2610,
+  "test_accuracy": 0.603448275862069,
+  "test_macro_f1": 0.4128422296930402,
+  "test_weighted_f1": 0.6004456801620203,
+  "labels": [
+    "neutral",
+    "joy",
+    "sadness",
+    "anger",
+    "fear",
+    "disgust",
+    "surprise"
+  ],
+  "checkpoint": "results/avater_meld\\best_model.pt"
+}
